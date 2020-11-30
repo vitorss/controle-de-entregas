@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, span, a, img, blockquote, cite, table {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-16px);
+}
+
+:root {
+    /* colors */
+
+    --color-light: #FBFBFB;
+    --color-black: #15161B;
+    --color-blacked: #202029;
+    --color-smooth: #2E2E3A;
+    --color-gray: #55555a;
+    --color-blue: #00BBDD;
+    --color-green: #00B67A;
+    --color-purple: #7A00FF;
+    --color-red: #FF420F;
+
+    /* font sizes */
+    --font-16px: 1rem;
+    --font-18px: 1.125rem;
+    --font-20px: 1.25rem;
+    --font-22px: 1.375rem;
+    --font-24px: 1.5rem;
+    --font-28px: 1.75rem;
+    --font-30px: 1.875rem;
+    --font-32px: 2rem;
+    --font-34px: 2.125rem;
+    --font-38px: 2.375rem;
+    --font-40px: 2.5rem;
+    --font-42px: 2.625rem;
+    --font-48px: 3rem;
+    --font-56px: 3.5rem;
+    --font-64px: 4rem;
+    --font-72px: 4.5rem;
+    --font-80px: 5rem;
+    --font-88px: 5.5rem;
+    --font-96px: 6rem;
+    --font-104px: 6.5rem;
+    --font-112px: 7rem;
+    /* fonte padrão */
+    font-family: var(--poppins);
+    --poppins: 'Poppins', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    background: var(--color-black);
+}

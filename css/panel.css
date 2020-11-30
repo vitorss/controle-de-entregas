@@ -1,0 +1,220 @@
+.panel {
+    width: 100%;
+    padding: var(--font-32px);
+    background-color: var(--color-black);
+}
+
+.panel-title .title {
+    font-size: var(--font-32px);
+    font-weight: 700;
+    color: var(--color-light);
+}
+
+.panel-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'card-1 card-2 card-3' 'card-4 card-4 card-5';
+    grid-gap: var(--font-16px);
+    padding: var(--font-32px) 0;
+}
+
+.panel-cards .card {
+    background: var(--color-blacked);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.panel-cards .card:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .3);
+    transition: .3s;
+}
+
+.panel-cards .card .card-header {
+    padding: 8px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .3);
+}
+
+.card .card-header .card-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-light);
+}
+
+.card-5 .card-header .card-title {
+    color: var(--color-black);
+}
+
+.card .card-body {
+    padding: var(--font-16px) var(--font-24px);
+}
+
+.card .card-body .card-text {
+    color: var(--color-light);
+}
+
+.card .card-body h5 {
+    font-size: var(--font-18px);
+    font-weight: 600;
+    color: var(--color-light);
+    padding: var(--font-16px) 0 8px 0;
+}
+
+.card .card-body .divider {
+    width: 100%;
+    height: 1px;
+    background: var(--color-smooth);
+    margin-top: 8px;
+}
+
+.card-body .requests {
+    padding: var(--font-16px) var(--font-24px);
+    margin: var(--font-16px) 0;
+    background: var(--color-smooth);
+    border-radius: 10px;
+    color: var(--color-light);
+}
+
+.card-body .requests .request-item .item-name {
+    font-weight: 600;
+    color: var(--color-green);
+}
+
+.card-body .requests .request-item .item-info {
+    display: flex;
+}
+
+.card-body .requests .request-item .item-info p {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.card-body .requests .request-item .item-info li {
+    margin-right: 4px;
+}
+
+.card-body .requests .request-item .item-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-body .requests .request-item .item-option .item-price {
+    font-weight: 600;
+    color: var(--color-red);
+    padding-top: 8px;
+}
+
+.card-body .requests .request-item .item-option .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.card-body .requests .request-item .item-option .options a {
+    margin-top: 4px;
+    border-radius: 10px;
+}
+
+.card-body .requests .request-item .item-option .options a i {
+    padding: 10px;
+    font-size: 22px;
+    color: var(--color-light);
+}
+
+.card-1 {
+    grid-area: card-1;
+}
+
+.card-2 {
+    grid-area: card-2;
+}
+
+.card-3 {
+    grid-area: card-3;
+}
+
+.card-4 {
+    grid-area: card-4;
+}
+
+.card-5 {
+    grid-area: card-5;
+}
+
+.bg-purple {
+    background: var(--color-purple);
+}
+
+.bg-green {
+    background: var(--color-green);
+}
+
+.bg-red {
+    background: var(--color-red);
+}
+
+.bg-blue {
+    background: var(--color-blue);
+}
+
+.bg-light {
+    background: var(--color-light);
+}
+
+.historic-requests {
+    padding: var(--font-16px) var(--font-24px);
+    margin: var(--font-16px) 0;
+    background: var(--color-smooth);
+    border-radius: 10px;
+    color: var(--color-light);
+}
+
+.historic-requests .historic-request-item .item-name {
+    font-weight: 600;
+    color: var(--color-green);
+}
+
+.historic-requests .historic-request-item .item-info {
+    display: block;
+    margin: 8px 0 0 0;
+}
+
+.historic-request-item .item-info p {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.historic-request-item .item {
+    display: flex;
+}
+
+.historic-request-item .item-info li {
+    margin-right: 8px;
+}
+
+.request-item .historic-item-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.historic-request-item .historic-item-option .options {
+    display: flex;
+}
+
+.card-body .historic-requests .historic-request-item .historic-item-option .options a {
+    margin-top: var(--font-16px);
+    margin-right: 8px;
+    border-radius: 10px;
+}
+
+.card-body .historic-requests .historic-request-item .historic-item-option .options a i {
+    padding: 10px;
+    font-size: 22px;
+    color: var(--color-light);
+}

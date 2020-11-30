@@ -1,0 +1,52 @@
+.task-panel-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: var(--font-16px);
+    padding: var(--font-32px) 0;
+}
+
+.task-panel-cards .card {
+    background: var(--color-blacked);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.task-panel-cards .card:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .3);
+    transition: .3s;
+}
+
+.task-panel-cards .card .card-header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .3);
+}
+
+.task-info .item-price {
+    font-weight: 600;
+    color: var(--color-red);
+    padding-top: 8px;
+}
+
+.card-body .action {
+    margin: 32px 0 16px 0;
+}
+
+.action .btn-add-pedido {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 187, 221, .25);
+    color: var(--color-light);
+    transition: .3s;
+}
+
+.action .btn-add-pedido:hover {
+    background: rgba(0, 187, 221, .5);
+    transition: .3s;
+}

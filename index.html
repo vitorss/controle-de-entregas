@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>YORE - Área de controle</title>
+</head>
+
+<body>
+    <main class="main" id="screen">
+        <section class="navigation">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <div class="logo"><img src="/src/assets/YORE.svg" alt=""></div>
+                    <div class="divider"></div>
+                    <div class="navbar-toggle" onclick="openNav()">
+                        <span>Menu</span>
+                        <div class="toggle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-options">
+                        <form class="form" action="">
+                            <input class="input" type="text" placeholder="Pesquisar...">
+                            <a class="btn btn-search" href="#"><i class='bx bx-search'></i></a>
+                        </form>
+                        <div class="options">
+                            <a class="btn btn-cog" href="#"><i class='bx bx-cog'></i></a>
+                            <a class="btn btn-user" href="#">
+                                <i class='bx bx-user'></i>
+                                <span class="username">John Doe</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="openSidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="btn-close" onclick="closeNav()">
+                            <span>Fechar</span>
+                            <i class='bx bx-plus'></i>
+                        </a>
+                        <div class="menu-toggler">
+                            <a href="/index.html"><i class='bx bx-home'></i>Início</a>
+                            <a href="/register-orders.html"><i class='bx bx-package'></i>Cadastrar Pedidos</a>
+                            <a href="/orders-area.html"><i class='bx bx-cart-alt'></i>Area dos Pedidos</a>
+                            <a href="#"><i class='bx bx-cog'></i>Configurações</a>
+                            <a href="/signin.html"><i class='bx bx-log-out-circle'></i>Sair</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="panel">
+            <div class="panel-title">
+                <h1 class="title">Visão Geral</h1>
+            </div>
+            <div class="panel-cards">
+                <div class="card card-1 bg-card">
+                    <div class="card-header bg-purple">
+                        <p class="card-title">Total de pedidos cadastrados</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">257 pedidos em 1 mês</p>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+                <div class="card card-2 bg-card">
+                    <div class="card-header bg-green">
+                        <p class="card-title">Total de pedidos entregues</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">200 pedidos em 1 mês</p>
+                        <div class="divider"></div>
+                        <h5>No ultimo mês</h5>
+                        <p class="card-text">100 pedidos entregues no último mês</p>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+                <div class="card card-3 bg-card">
+                    <div class="card-header bg-red">
+                        <p class="card-title">Total de pedidos não entregues</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">257 pedidos em 1 mês</p>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+                <div class="card card-4 bg-card">
+                    <div class="card-header bg-blue">
+                        <p class="card-title">Pedidos do dia</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="requests">
+                            <li class="request-item">
+                                <p class="item-name">John Doe, Av. Alguma Coisa - 455</p>
+                                <ul class="item-info">
+                                    <p>Itens do pedido:</p>
+                                    <li>Item 1,</li>
+                                    <li>Item 2,</li>
+                                    <li>Item 3</li>
+                                </ul>
+                                <div class="item-option">
+                                    <p class="item-price">Valor do Pedido: R$ 55,00</p>
+                                    <div class="options">
+                                        <a class="btn-edit bg-green" href="#"><i class='bx bx-edit'></i></a>
+                                        <a class="btn-trash bg-red" href="#"><i class='bx bx-trash'></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="requests">
+                            <li class="request-item">
+                                <p class="item-name">John Doe, Av. Alguma Coisa - 455</p>
+                                <ul class="item-info">
+                                    <p>Itens do pedido:</p>
+                                    <li>Item 1,</li>
+                                    <li>Item 2,</li>
+                                    <li>Item 3</li>
+                                </ul>
+                                <div class="item-option">
+                                    <p class="item-price">Valor do Pedido: R$ 55,00</p>
+                                    <div class="options">
+                                        <a class="btn-edit bg-green" href="#"><i class='bx bx-edit'></i></a>
+                                        <a class="btn-trash bg-red" href="#"><i class='bx bx-trash'></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="requests">
+                            <li class="request-item">
+                                <p class="item-name">John Doe, Av. Alguma Coisa - 455</p>
+                                <ul class="item-info">
+                                    <p>Itens do pedido:</p>
+                                    <li>Item 1,</li>
+                                    <li>Item 2,</li>
+                                    <li>Item 3</li>
+                                </ul>
+                                <div class="item-option">
+                                    <p class="item-price">Valor do Pedido: R$ 55,00</p>
+                                    <div class="options">
+                                        <a class="btn-edit bg-green" href="#"><i class='bx bx-edit'></i></a>
+                                        <a class="btn-trash bg-red" href="#"><i class='bx bx-trash'></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+                <div class="card card-5 bg-card">
+                    <div class="card-header bg-light">
+                        <p class="card-title">Histórico de Pedidos</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="historic-requests">
+                            <li class="historic-request-item">
+                                <p class="item-name">John Doe, Av. Alguma Coisa - 455</p>
+                                <ul class="item-info">
+                                    <p>Itens do pedido:</p>
+                                    <div class="item">
+                                        <li>Item 1,</li>
+                                        <li>Item 2,</li>
+                                        <li>Item 3</li>
+                                    </div>
+                                </ul>
+                                <div class="historic-item-option">
+                                    <div class="options">
+                                        <a class="btn-edit bg-green" href="#"><i class='bx bx-edit'></i></a>
+                                        <a class="btn-trash bg-red" href="#"><i class='bx bx-trash'></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="historic-requests">
+                            <li class="historic-request-item">
+                                <p class="item-name">John Doe, Av. Alguma Coisa - 455</p>
+                                <ul class="item-info">
+                                    <p>Itens do pedido:</p>
+                                    <div class="item">
+                                        <li>Item 1,</li>
+                                        <li>Item 2,</li>
+                                        <li>Item 3</li>
+                                    </div>
+                                </ul>
+                                <div class="historic-item-option">
+                                    <div class="options">
+                                        <a class="btn-edit bg-green" href="#"><i class='bx bx-edit'></i></a>
+                                        <a class="btn-trash bg-red" href="#"><i class='bx bx-trash'></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="/js/sidenav.js"></script>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>YORE - Cadastrar pedidos</title>
+</head>
+
+<body>
+    <main class="main" id="screen">
+        <section class="navigation">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <div class="logo"><img src="/src/assets/YORE.svg" alt=""></div>
+                    <div class="divider"></div>
+                    <div class="navbar-toggle" onclick="openNav()">
+                        <span>Menu</span>
+                        <div class="toggle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-options">
+                        <form class="form" action="">
+                            <input class="input" type="text" placeholder="Pesquisar...">
+                            <a class="btn btn-search" href="#"><i class='bx bx-search'></i></a>
+                        </form>
+                        <div class="options">
+                            <a class="btn btn-cog" href="#"><i class='bx bx-cog'></i></a>
+                            <a class="btn btn-user" href="#">
+                                <i class='bx bx-user'></i>
+                                <span class="username">John Doe</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="openSidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="btn-close" onclick="closeNav()">
+                            <span>Fechar</span>
+                            <i class='bx bx-plus'></i>
+                        </a>
+                        <div class="menu-toggler">
+                            <a href="/index.html"><i class='bx bx-home'></i>Início</a>
+                            <a href="/register-orders.html"><i class='bx bx-package'></i>Cadastrar Pedidos</a>
+                            <a href="/orders-area.html"><i class='bx bx-cart-alt'></i>Area dos Pedidos</a>
+                            <a href="#"><i class='bx bx-cog'></i>Configurações</a>
+                            <a href="/signin.html"><i class='bx bx-log-out-circle'></i>Sair</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="register-orders">
+            <div class="panel-title">
+                <h1 class="title">Cadastro de pedidos</h1>
+            </div>
+            <div class="register-form">
+                <form action="" class="form">
+                    <div class="rows">
+                        <div class="forms">
+                            <label class="label" for="">Destinatário</label>
+                            <input class="input" type="text" name="" id="">
+                        </div>
+                        <div class="forms">
+                            <label class="label" for="">Endereço de entrega</label>
+                            <input class="input" type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="forms">
+                            <label class="label" for="">Telefone do Destinatário</label>
+                            <input class="input" type="tel" name="" id="">
+                        </div>
+                        <div class="forms">
+                            <label class="label" for="">Nome do entregador</label>
+                            <input class="input" type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div class="forms">
+                        <div class="input-textarea">
+                            <label class="label" for="">Itens do pedido</label>
+                            <textarea class="textarea" name="" id="" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="forms">
+                            <label class="label" for="">Data do pedido</label>
+                            <input class="input" type="date" name="" id="">
+                        </div>
+                        <div class="forms">
+                            <label class="label" for="">Valor do pedido</label>
+                            <input class="input" type="number" name="" id="">
+                        </div>
+                    </div>
+                    <div class="forms">
+                        <div class="input-textarea">
+                            <label class="label" for="">Descrição e observações sobre o pedido</label>
+                            <textarea class="textarea" name="" id="" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <span></span>
+                    </div>
+                    <div class="register-forms-buttons">
+                        <div class="buttons btn-block">
+                            <button class="btn btn-done">Cadastrar pedido</button>
+                            <button class="btn btn-clear">Limpar campos</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="card bg-card">
+                    <div class="card-header bg-purple">
+                        <p class="card-title">Pedidos cadastrados</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="historic-requests">
+                            <li class="historic-request-item">
+                                <p class="item-name">John Doe, Av. Alguma Coisa - 455</p>
+                                <ul class="item-info task-info">
+                                    <p class="item-price">Valor do Pedido: R$ 55,00</p>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="/js/sidenav.js"></script>
+
+</html>

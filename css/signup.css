@@ -1,0 +1,223 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-cover {
+    width: 100%;
+    padding: var(--font-88px) var(--font-96px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-form .login-link {
+    font-weight: 500;
+    color: var(--color-blue);
+}
+
+.header-cover {
+    text-align: center;
+    padding-bottom: var(--font-48px);
+}
+
+.header-cover .brand {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-cover .brand .title {
+    font-size: var(--font-32px);
+    font-weight: 800;
+    color: var(--color-black);
+}
+
+.header-cover .brand .logo {
+    margin-left: 12px;
+}
+
+.header-cover .subtitle {
+    font-size: var(--font-16px);
+    font-weight: 300;
+    color: #7E7E7E;
+}
+
+.bg-login img {
+    width: 400px;
+}
+
+.content-form {
+    width: 100%;
+    padding: var(--font-48px) var(--font-96px);
+    background: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-form {
+    color: var(--color-light);
+    text-align: center;
+}
+
+.header-form .header-title .title {
+    font-size: var(--font-32px);
+    padding-bottom: var(--font-18px);
+    font-weight: 700;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.form-control .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control .form label {
+    color: var(--color-light);
+    font-weight: 600;
+    padding: 14px 0;
+}
+
+.form-control .form .input-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-control .form .input-group .input {
+    padding: 10px 10px 10px 42px;
+    width: 100%;
+    background-color: var(--color-blacked);
+    color: var(--color-light);
+    font-family: 'Poppins';
+    font-weight: 500;
+    border-radius: 10px;
+    border: 2px solid rgba(54, 56, 56, 0.5);
+}
+
+.form-control .form .input-group .input:focus {
+    outline: none;
+    border: 2px solid rgb(68, 69, 70);
+    transition: 0.2s;
+}
+
+.form-control .form .input-group .input-group-icon {
+    position: absolute;
+    padding: 15px;
+}
+
+.form-control .form .input-group .input-group-icon i {
+    font-size: var(--font-20px);
+    color: var(--color-light);
+}
+
+.input-group-text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--font-18px) 0;
+}
+
+.input-group-text .remember-me {
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+}
+
+.input-group-text .remember-me p {
+    font-weight: 500;
+}
+
+.input-group-text .remember-me input[type='checkbox'] {
+    background: var(--color-blacked);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.input-group-text .forgot-pass {
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+.btn-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    padding: 10px 0;
+}
+
+.btn-group .btn {
+    flex-grow: 1;
+    text-align: center;
+    padding: 11px var(--font-32px);
+    border: none;
+    border-radius: 10px;
+    color: var(--color-light);
+}
+
+.btn-login {
+    background: rgba(0, 187, 221, .5);
+    font-weight: 600;
+    transition: .2s;
+}
+
+.btn-login:hover {
+    background: var(--color-blue);
+    transition: .2s;
+}
+
+.btn-register {
+    background: rgba(0, 182, 122, .5);
+    font-weight: 600;
+    transition: .2s;
+}
+
+.btn-register:hover {
+    background: var(--color-green);
+    transition: .2s;
+}
+
+.btn-block {
+    display: grid !important;
+    grid-template-columns: auto;
+    grid-gap: 16px;
+}
+
+/* .btn-google {
+    background: #EA4335;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-google i {
+    font-size: var(--font-24px);
+    margin-right: 12px;
+} */
+
+.divider {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider span {
+    height: 1px;
+    background: var(--color-blacked);
+}
+
+.divider p {
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--font-16px);
+    color: var(--color-light);
+}
